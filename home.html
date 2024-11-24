@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wallpaper Download Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='home.css') }}">
+
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #121212; color: #ffffff;">
+
+<!-- Header -->
+<header style="text-align: center; padding: 20px; background-color: #1f1f1f; display: flex; justify-content: space-between; align-items: center;">
+    <div style="flex: 1;">
+        <h1 style="margin: 0; font-size: 2.5em;">Wallpaper's World</h1>
+        <p style="font-size: 1.2em; color: #cccccc;">Choose your favorite wallpapers from different genres and qualities!</p>
+    </div>
+    <div style="display: flex; gap: 10px;">
+        <!-- Update the buttons to link to the correct routes -->
+        <a href="/login">
+            <button style="background-color: #4CAF50; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Login</button>
+        </a>
+        <a href="/register">
+            <button style="background-color: #007BFF; color: white; padding: 10px 20px; border: none; border-radius: 5px; cursor: pointer;">Sign Up</button>
+        </a>
+        
+    </div>
+</header>
+
+
+    <!-- Genres Section -->
+    <div style="max-width: 1200px; margin: 20px auto; padding: 20px;">
+        <!-- Nature Genre -->
+        <section style="margin-bottom: 40px;">
+            <h2 style="margin-bottom: 20px; color: #00ff7f;">Nature Wallpapers</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <!-- Wallpaper 1 -->
+                <div style="flex: 1 1 300px; text-align: center; background-color: #1f1f1f; padding: 10px; border-radius: 8px;">
+                    <img src="{{ url_for('static', filename='n2.jpg') }}" alt="Nature Wallpaper 1" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0;">Peaceful Lake</h3>
+                    <div>
+                        <a href="{{ url_for('static', filename='n2.jpg') }}" style="color: #00ff7f; margin-right: 10px;">720p</a>
+                        <a href="{{ url_for('static', filename='n2.jpg') }}" style="color: #00ff7f; margin-right: 10px;">1080p</a>
+                        <a href="{{ url_for('static', filename='n2.jpg') }}" style="color: #00ff7f;">4K</a>
+                    </div>
+                </div>
+                <!-- Wallpaper 2 -->
+                <div style="flex: 1 1 300px; text-align: center; background-color: #1f1f1f; padding: 10px; border-radius: 8px;">
+                    <img src="{{ url_for('static', filename='n1.jpg') }}" alt="Nature Wallpaper 2" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0;">Mountain View</h3>
+                    <div>
+                        <a href="{{ url_for('static', filename='n1.jpg') }}" style="color: #00ff7f; margin-right: 10px;">720p</a>
+                        <a href="{{ url_for('static', filename='n1.jpg') }}" style="color: #00ff7f; margin-right: 10px;">1080p</a>
+                        <a href="{{ url_for('static', filename='n1.jpg') }}" style="color: #00ff7f;">4K</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abstract Genre -->
+        <section style="margin-bottom: 40px;">
+            <h2 style="margin-bottom: 20px; color: #ffa500;">Abstract Wallpapers</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <!-- Wallpaper 1 -->
+                <div style="flex: 1 1 300px; text-align: center; background-color: #1f1f1f; padding: 10px; border-radius: 8px;">
+                    <img src="{{ url_for('static', filename='a2.jpg') }}" alt="Abstract Wallpaper 1" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0;">Colored Feathers</h3>
+                    <div>
+                        <a href="{{ url_for('static', filename='a2.jpg') }}" style="color: #ffa500; margin-right: 10px;">720p</a>
+                        <a href="{{ url_for('static', filename='a2.jpg') }}" style="color: #ffa500; margin-right: 10px;">1080p</a>
+                        <a href="{{ url_for('static', filename='a2.jpg') }}" style="color: #ffa500;">4K</a>
+                    </div>
+                </div>
+                <!-- Wallpaper 2 -->
+                <div style="flex: 1 1 300px; text-align: center; background-color: #1f1f1f; padding: 10px; border-radius: 8px;">
+                    <img src="{{ url_for('static', filename='a1.jpg') }}" alt="Abstract Wallpaper 2" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0;">Shifting Block</h3>
+                    <div>
+                        <a href="{{ url_for('static', filename='a1.jpg') }}" style="color: #ffa500; margin-right: 10px;">720p</a>
+                        <a href="{{ url_for('static', filename='a1.jpg') }}" style="color: #ffa500; margin-right: 10px;">1080p</a>
+                        <a href="{{ url_for('static', filename='a1.jpg') }}" style="color: #ffa500;">4K</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Technology Genre -->
+        <section>
+            <h2 style="margin-bottom: 20px; color: #1e90ff;">Technology Wallpapers</h2>
+            <div style="display: flex; gap: 20px; flex-wrap: wrap;">
+                <!-- Wallpaper 1 -->
+                <div style="flex: 1 1 300px; text-align: center; background-color: #1f1f1f; padding: 10px; border-radius: 8px;">
+                    <img src="{{ url_for('static', filename='t2.jpg') }}" alt="Technology Wallpaper 1" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0;">Cyber Punk Terrorist</h3>
+                    <div>
+                        <a href="{{ url_for('static', filename='t2.jpg') }}" style="color: #1e90ff; margin-right: 10px;">720p</a>
+                        <a href="{{ url_for('static', filename='t2.jpg') }}" style="color: #1e90ff; margin-right: 10px;">1080p</a>
+                        <a href="{{ url_for('static', filename='t2.jpg') }}" style="color: #1e90ff;">4K</a>
+                    </div>
+                </div>
+                <!-- Wallpaper 2 -->
+                <div style="flex: 1 1 300px; text-align: center; background-color: #1f1f1f; padding: 10px; border-radius: 8px;">
+                    <img src="{{ url_for('static', filename='t1.jpg') }}" alt="Technology Wallpaper 2" style="width: 100%; border-radius: 8px;">
+                    <h3 style="margin: 10px 0;">ARC Power Souce</h3>
+                    <div>
+                        <a href="{{ url_for('static', filename='t1.jpg') }}" style="color: #1e90ff; margin-right: 10px;">720p</a>
+                        <a href="{{ url_for('static', filename='t1.jpg') }}" style="color: #1e90ff; margin-right: 10px;">1080p</a>
+                        <a href="{{ url_for('static', filename='t1.jpg') }}" style="color: #1e90ff;">4K</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+</body>
+</html>

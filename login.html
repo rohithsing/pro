@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+</head>
+<body style="font-family: Arial, sans-serif; margin: 0; padding: 0; 
+            background-image: url('register.png'); 
+            background-size: cover; 
+            background-position: center center; 
+            background-attachment: fixed; 
+            background-repeat: no-repeat; 
+            color: #fff;">
+
+    <div style="max-width: 400px; margin: 50px auto; padding: 20px; background: #323030; border-radius: 10px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+        <h2 style="text-align: center; color: #99839c; margin-bottom: 20px;">Login to Access Wallpapers</h2>
+
+        <!-- The form action points to '/login' to handle authentication -->
+        <form action="/login" method="POST">
+            <label for="emailOrPhone" style="display: block; color: #8d8c8c; margin-bottom: 5px; font-weight: bold;">Email or Mobile Number:</label>
+            <input type="text" id="emailOrPhone" name="emailOrPhone" placeholder="email/mobile number" style="width: 80%; padding: 10px; margin-bottom: 15px; border: 1px solid #000; border-radius: 5px;" required>
+        
+            <label for="password" style="display: block; color: #8d8c8c; margin-bottom: 5px; font-weight: bold;">Password:</label>
+            <input type="password" id="password" name="password" placeholder="Enter your password" style="width: 60%; padding: 10px; margin-bottom: 15px; border: 1px solid #000; border-radius: 5px;" required>
+        
+            <button type="submit" style="width: 95%; padding: 10px; background-color: #cdcd19; color: black; border: none; border-radius: 15px; font-size: 15px; cursor: pointer;">Login</button>
+        </form>
+        
+    </div>
+
+</body>
+</html>
